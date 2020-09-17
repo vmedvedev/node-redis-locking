@@ -1,0 +1,31 @@
+{
+  "name": "node_redis_locking",
+  "version": "1.0.0",
+  "description": "Distributed locking with Redis.",
+  "author": "Vitalii Medvediev <vetalmedvedev@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "redis",
+    "lock"
+  ],
+  "dependencies": {
+    "jest": "^26.4.2",
+    "ioredis": "^4.17.3",
+    "uuid": "^8.3.0",
+    "bluebird": "^3.7.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vmedvedev/node-redis-locking.git"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "engines": {
+    "node": "12.x"
+  }
+}
