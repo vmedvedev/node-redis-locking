@@ -1,6 +1,7 @@
 'use strict';
 
 const { v4: uuidv4 } = require('uuid');
+const { sleep } = require('./sleep');
 
 const acquireLock = async (redis, lockname) => {
   const identifier = uuidv4();
