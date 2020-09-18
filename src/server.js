@@ -5,7 +5,6 @@ var url = require('url');
 const Redis = require("ioredis");
 const REDIS_HOST = process.env.REDIS_HOST || 'redis';
 const redis = new Redis(process.env.REDIS_PORT, REDIS_HOST);
-const redis2 = new Redis(process.env.REDIS_PORT, REDIS_HOST);
 const { executeLater, pollQueue, watchQueue } = require('./example');
 const queue = 'messages';
 
