@@ -1,7 +1,7 @@
 'use strict';
 
 const http = require('http');
-var url = require('url');
+const url = require('url');
 const Redis = require("ioredis");
 const REDIS_HOST = process.env.REDIS_HOST || 'redis';
 const redis = new Redis(process.env.REDIS_PORT, REDIS_HOST);
