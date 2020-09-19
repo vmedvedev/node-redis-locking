@@ -2,8 +2,8 @@
 
 const { v4: uuidv4 } = require('uuid');
 const Promise = require("bluebird");
-const acquireLock = require('./acquireLock');
-const releaseLock = require('./releaseLock');
+const acquireLock = require('./acquire-lock');
+const releaseLock = require('./release-lock');
 
 /**
  * Adds command to the delayed queue.
